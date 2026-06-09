@@ -1,0 +1,30 @@
+body {
+    background: #0f172a; /* dark blue */
+    font-family: Arial, sans-serif;
+}
+
+/* Stats cards */
+.stat-card {
+    background: #374151; /* grey */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h1 {
+    font-weight: bold;
+}
+
+/* Buttons spacing look better */
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+}
