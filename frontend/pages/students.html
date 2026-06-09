@@ -11,9 +11,7 @@ Columns:
     Prenom
     Email
     Filiere
-    Niveau
     Moyenne
-    Statut
 
 Actions:
     Edit
@@ -21,3 +19,96 @@ Actions:
 
 - Call backend routes when deleting
 -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Student Manager</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./dashboard.html"> Dashboard </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./students.html"> Students </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./add_student.html"> Add Student </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <div class="card border-0 shadow-lg">
+        <div
+          class="card-header bg-dark text-white d-flex justify-content-between align-items-center"
+        >
+          <h3 class="mb-0">Students List</h3>
+        </div>
+
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover table-striped mb-0 align-middle">
+              <thead class="table-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>Email</th>
+                  <th>Filiere</th>
+                  <th>Moyenne</th>
+                  <th class="text-center">Actions</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ahmed</td>
+                  <td>Bennani</td>
+                  <td>ahmed@gmail.com</td>
+                  <td>Informatique</td>
+                  <td>15.5</td>
+                  <td class="text-center">
+                    <button class="btn btn-warning btn-sm me-2">Edit</button>
+
+                    <button class="btn btn-danger btn-sm">Delete</button>
+                  </td>
+                </tr>
+
+                <!-- More rows will be added dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

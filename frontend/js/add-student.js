@@ -29,15 +29,15 @@ document.querySelector("form").addEventListener("click", (e) => {
   let valid = true;
 
   if (nomInput.value.trim().length < 3) {
-    userName.nextElementSibling.classList.remove("hidden");
+    nomInput.nextElementSibling.classList.remove("hidden");
     valid = false;
   }
   if (prenomInput.value.trim().length < 3) {
-    userName.nextElementSibling.classList.remove("hidden");
+    prenomInput.nextElementSibling.classList.remove("hidden");
     valid = false;
   }
   if (filiereInput.value.trim().length < 3) {
-    userName.nextElementSibling.classList.remove("hidden");
+    filiereInput.nextElementSibling.classList.remove("hidden");
     valid = false;
   }
 
@@ -50,7 +50,7 @@ document.querySelector("form").addEventListener("click", (e) => {
     Number(moyenneInput.value.length) >= 0 ||
     Number(moyenneInput.value.length <= 20)
   ) {
-    password.nextElementSibling.classList.remove("hidden");
+    moyenneInput.nextElementSibling.classList.remove("hidden");
     valid = false;
   }
 

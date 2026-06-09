@@ -1,0 +1,90 @@
+body {
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #374151 !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #e5e7eb !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: rgb(32, 221, 221) !important;
+}
+
+/* Form Card */
+.form-container {
+    background: #374151;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 50px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    font-weight: bold;
+}
+
+/* Inputs */
+.form-control {
+    background: #f8fafc;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(22, 101, 52, 0.25);
+    border-color: #166534;
+}
+
+/* Labels */
+.form-label {
+    color: #e5e7eb;
+    font-weight: 500;
+}
+
+/* Button */
+.btn-primary {
+    background: #166534;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #14532d;
+    transform: translateY(-2px);
+}
+
+/* Error messages */
+.Error {
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Optional success message */
+.success {
+    color: #22c55e;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
