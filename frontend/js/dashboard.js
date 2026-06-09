@@ -1,10 +1,16 @@
-fetch("http://localhost/student_manager/backend/routes/students.php")
+const avgGrade = document.querySelector("#avgGrade");
+const totalStudents = document.querySelector("#totalStudents");
+
+fetch(
+  "http://localhost/student_manager/backend/routes/students.php?action=stats",
+)
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
 
     if (data.success) {
-      console.log(data.data); // your students
+      avgGrade.textContent = data.avgGrade;
+      totalStudents.textContent = data.totalStudents;
     } else {
       alert(data.message);
     }

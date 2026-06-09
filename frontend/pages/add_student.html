@@ -1,16 +1,6 @@
 <!--
 ADD STUDENT PAGE
 
-- Create a form with:
-    nom
-    prenom
-    email
-    telephone
-    filiere
-    niveau
-    moyenne
-    statut
-
 - Validate all inputs
 
 - Send data using fetch() to:
@@ -18,3 +8,100 @@ ADD STUDENT PAGE
 
 - Show success or error messages
 -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+          <div class="form-container">
+            <h2 class="text-center mb-4">Add Student</h2>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label">nom</label>
+                <input
+                  type="text"
+                  name="nom"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  id="nom"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">prenom</label>
+                <input
+                  type="text"
+                  name="prenom"
+                  class="form-control"
+                  placeholder="Enter your first name"
+                  id="prenom"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email: </label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Ex: ahmed@gmail.com"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">filiere</label>
+                <input
+                  type="text"
+                  name="filiere"
+                  class="form-control"
+                  placeholder="Enter your major"
+                  id="filiere"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">moyenne</label>
+                <input
+                  type="number"
+                  step="0.1"
+                  name="moyenne"
+                  class="form-control"
+                  placeholder="Enter the Average"
+                  id="moyenne"
+                  required
+                />
+              </div>
+
+              <button type="submit" name="submit" class="btn btn-primary w-100">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
