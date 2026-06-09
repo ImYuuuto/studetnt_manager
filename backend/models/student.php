@@ -31,6 +31,15 @@ class student{
          $stm = $this->conn ->prepare("delete from students where id= ? ");
          return $stm->execute([$id] );
     }
+    public function avgGrade(){
+         $stm = $this->conn ->prepare("select avg(moyenne) from students");
+        return  $stm->execute();
+    }
+    public function countStudent(){
+         $stm = $this->conn ->prepare("select count(*) from students");
+        return  $stm->execute();
+    }
+    
 }
 
 
